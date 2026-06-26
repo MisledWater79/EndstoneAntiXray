@@ -15,7 +15,7 @@ on:
 
 jobs:
   release:
-    if: github.repository == 'EndstoneMC/cpp-example-plugin'
+    if: github.repository == 'MisledWater79/EndstoneAntiXray'
     runs-on: ubuntu-latest
     permissions:
       contents: write
