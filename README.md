@@ -1,4 +1,4 @@
-# Endstone AntiXray!
+# Endstone AntiXray
 ![GitHub Downloads (specific asset, all releases)](https://img.shields.io/github/downloads/MisledWater79/EndstoneAntiXray/total?label=Downloads)
 ![](https://img.shields.io/badge/language-c++-blue.svg?label=Language)
 ![GitHub License](https://img.shields.io/github/license/MisledWater79/EndstoneAntiXray?label=License)
