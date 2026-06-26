@@ -10,6 +10,7 @@ if(MSVC OR CMAKE_CXX_COMPILER_ID MATCHES "Clang" AND CMAKE_CXX_SIMULATE_ID MATCH
 endif()
 
 set(SOURCES
+        src/BinStream.cpp
         src/AntiXray.cpp
         src/Entry.cpp
 )

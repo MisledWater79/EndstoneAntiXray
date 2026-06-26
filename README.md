@@ -31,7 +31,12 @@ Here you can manage a couple configurable settings.
 
 The format for this file is as such:
 ```json
-{}
+{
+  "ignore_operators": false,
+  "excluded_players": [
+    "MisledWater79"
+  ]
+}
 ```
 
 ---

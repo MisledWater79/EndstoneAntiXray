@@ -5,6 +5,7 @@
 #include <iomanip>
 #include <sstream>
 #include <string>
+#include <string_view>
 
 typedef uint32_t uint24_t;
 typedef int32_t int24_t;
@@ -26,6 +27,7 @@ public:
 	BinStream(const uint8_t* data, uint32_t length);
 	BinStream(uint32_t length);
 	BinStream(const char* data, uint32_t length);
+	BinStream(std::string_view sv);
 
 	BinStream(const BinStream& other);
 	BinStream(BinStream&& other) noexcept;

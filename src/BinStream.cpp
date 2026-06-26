@@ -26,6 +26,13 @@ BinStream::BinStream(const char* data, uint32_t length) {
 	this->position = 0;
 }
 
+BinStream::BinStream(std::string_view sv) {
+	this->size = sv.size();
+	this->data = new uint8_t[this->size];
+	memcpy(this->data, sv.data(), this->size);
+	this->position = 0;
+}
+
 BinStream::BinStream(const BinStream& other) {
 	this->size = other.size;
 	this->position = other.position;
