@@ -2,7 +2,7 @@
 
 #include <endstone/plugin/plugin.h>
 
-class PluginTemplate : public endstone::Plugin {
+class AntiXray : public endstone::Plugin {
 public:
     void onEnable() override;
 
