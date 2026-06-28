@@ -143,6 +143,7 @@ void AntiXray::blockExplode(BlockExplodeEvent& event) {
     for (auto player : this->getServer().getOnlinePlayers()) {
         if (config["ignore_operators"] && player->isOp()) continue;
         if (isExcluded(player->getName())) continue;
+        if (player->getDimension().getName() != event.getBlock().getDimension().getName()) continue;
         if (event.getBlock().getLocation().distance(player->getLocation()) <= 64) {
             for (auto &block : event.getBlockList()) {
                 checkBlocks(*block, *player, false);
@@ -155,6 +156,7 @@ void AntiXray::actorExplode(ActorExplodeEvent& event) {
     for (auto player : this->getServer().getOnlinePlayers()) {
         if (config["ignore_operators"] && player->isOp()) continue;
         if (isExcluded(player->getName())) continue;
+        if (player->getDimension().getName() != event.getActor().getDimension().getName()) continue;
         if (event.getLocation().distance(player->getLocation()) <= 64) {
             for (auto &block : event.getBlockList()) {
                 checkBlocks(*block, *player, false);
