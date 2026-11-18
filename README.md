@@ -35,9 +35,13 @@ The format for this file is as such:
   "ignore_operators": false,
   "excluded_players": [
     "MisledWater79"
-  ]
+  ],
+  "max_ms_per_tick": 5
 }
 ```
+
+`max_ms_per_tick` (optional, default `5`) caps how many milliseconds per server tick are spent hiding ores in newly sent chunks.
+Higher values hide ores faster after a player joins or teleports; lower values keep TPS smoother.
 
 ---
 
